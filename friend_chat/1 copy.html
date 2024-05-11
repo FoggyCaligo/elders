@@ -21,7 +21,8 @@
             <img src="../img/장미.png" style="border-radius: 10px; width:50px; height:50px;float:left;">
             <div>권순아</div>
             <div style="width:50vw;background-color: white; border-radius: 10px; margin-left: 50px; float:left;">안녕하시유</div>
-            <img src="../img/speaker.png" style="width: 50px;height:auto;">
+            <audio id = "myAudio" src="../sound/안녕하시유.mp3" >오디오 지원되지 않는 브라우저</audio>
+            <img  src="../img/speaker.png" style="width: 50px;height:auto;" onclick="conv_1()">
 
         </div>
 
@@ -38,7 +39,10 @@
             <div>권순아</div>
             <div style="width:50vw;background-color: white; border-radius: 10px; margin-left: 50px; float:left;">잘 지내다마다
                 댁은 워뗘, 평안하셨수?</div>
-            <img src="../img/speaker.png" style="width: 50px;height:auto;">
+            
+            <audio id = "conv2" src="../sound/잘지내다마다.mp3" >오디오 지원되지 않는 브라우저</audio>
+            <img  src="../img/speaker.png" style="width: 50px;height:auto;" onclick="conv_2()">
+    
         </div>
 
         <div>
@@ -52,7 +56,11 @@
             <img src="../img/장미.png" style="border-radius: 10px; width:50px; height:50px;float:left;">
             <div>권순아</div>
             <div style="width:50vw;background-color: white; border-radius: 10px; margin-left: 50px; float:left;">저번에 새댁이 간장 장독대를 깨먹는 바람에 오늘 다시 맹글려고 메주 쑤고 있소</div>
-            <img src="../img/speaker.png" style="width: 50px;height:auto;">
+           
+            <audio id = "conv3" src="../sound/저번에새댁이.mp3" >오디오 지원되지 않는 브라우저</audio>
+            <img  src="../img/speaker.png" style="width: 50px;height:auto;" onclick="conv_3()">
+    
+            
         </div>
            
     </div>
@@ -79,3 +87,26 @@
     </div>
 </body>
 </html>
+
+
+
+<script>
+
+
+function conv_1(){
+    const myAudio = document.getElementById("myAudio")
+    myAudio.play();
+}
+
+function conv_2(){
+    const myAudio = document.getElementById("conv2")
+    myAudio.play();
+}
+
+function conv_3(){
+    const myAudio = document.getElementById("conv3")
+    myAudio.play();
+}
+
+
+</script>
